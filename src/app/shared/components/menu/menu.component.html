@@ -1,0 +1,20 @@
+<ul class="navbar-nav me-auto mb-2 mb-md-0">
+    <ng-content select="[header]"></ng-content>
+
+    <li class="nav-item">
+    <a class="nav-link" aria-current="page" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Home</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" routerLink="/concepts" routerLinkActive="active">Concepts</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" routerLink="/employees" routerLinkActive="active">Employees</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" routerLink="/products" routerLinkActive="active">Products</a>
+        </li>
+    <li class="nav-item">
+    <a class="nav-link" routerLink="/about" routerLinkActive="active">About</a>
+    </li>
+    <ng-content select="[footer]"></ng-content>
+    </ul>
